@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE':'django.db.backends.postgresql',
-        'NAME':'portfoliodb',
-        'USER':'postgres',
-        'PASSWORD':'Django1234',
+        'NAME':'postfoliodb',
+        'USER':'djangodbman',
+        'PASSWORD':'django1234',
         'PORT':'5432'
     }
 }
@@ -133,7 +133,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 try:
-        from local_settings import *
+        from .local_settings import *
 except ImportError:
         pass
 
